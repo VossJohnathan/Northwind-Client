@@ -13,5 +13,14 @@ $(function(){
          $('#' + this.id + 'Img').removeClass().addClass('animate__animated animate__bounceInDown') :
          $('#' + this.id + 'Img').addClass('animate__animated animate__bounceOutUp');
     });
+
+    //Show toast
+    $('.submit').on('click', function(e) {
+        
+        $('#liveToast').toast({ autohide: false }).toast('show');
+    });
+
+    //On mouse over, change header color.
+    
 });
 
