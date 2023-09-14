@@ -68,8 +68,21 @@
                             </div>
                         </div>
                         <button type="button" class="btn btn-outline-primary mt-3" id="submit">Submit</button>
-                        <button type="button" class="btn btn-outline-primary mt-3" class="btn uncheck-all" onclick="unCheck()" value="unchecks All" id="uncheckAll">Uncheck all</button>
-                        <button type="button" class="btn btn-outline-primary mt-3" class="btn check-all" onclick="check()" value="checks All" id="checkAll">Check All</button>
+                        <button type="button" class="btn btn-outline-primary mt-3" class="btn uncheck-all" onclick="unCheck()" id="uncheckAll">Uncheck all</button>
+                        <button type="button" class="btn btn-outline-primary mt-3" class="btn check-all" onclick="check()" id="checkAll">Check All</button>
+                        <script>
+                            function check() {
+                              document.getElementById("red").checked = true;
+                              document.getElementById("green").checked = true;
+                              document.getElementById("blue").checked = true;
+                            }
+                            
+                            function unCheck() {
+                              document.getElementById("red").checked = false;
+                              document.getElementById("green").checked = false;
+                              document.getElementById("blue").checked = false;
+                            }
+                        </script>
                     </div>
                 </div>
                 <div class="col-sm">

@@ -15,16 +15,3 @@ $(function(){
     });
 });
 
-$(function(check){
-    var get= document.getElementsByClassName('form-check-input');
-    for (var i=0; i < get.length; i++) {
-        get[i].checked=true;
-    }
-});
-
-$(function(unCheck){
-    var get= document.getElementsByClassName('form-check-input');
-    for (var i=0; i < get.length; i++) {
-        get[i].checked=false;
-    }
-});
